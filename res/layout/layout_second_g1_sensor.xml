@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/root" android:background="@drawable/item_expand_dark" style="@style/MatchMatch"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/sensorLeft" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/include_g1_sensor_left" />
+    <include android:id="@id/sensorRight" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_constraintTop_toBottomOf="@id/sensorLeft" layout="@layout/include_g1_sensor_right" />
+    <TextView android:id="@id/typeTemperature" android:layout_marginTop="25.0dip" android:text="@string/sensor_type_temperature" android:layout_marginEnd="35.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/MotorH1Type" />
+    <TextView android:id="@id/typeMoment" android:text="@string/sensor_type_torque" app:layout_constraintEnd_toEndOf="@id/typeTemperature" app:layout_constraintTop_toBottomOf="@id/typeTemperature" style="@style/MotorH1Type" />
+    <TextView android:id="@id/errorClear" android:visibility="gone" android:text="@string/sensor_error_clear" app:layout_constraintEnd_toEndOf="@id/typeMoment" app:layout_constraintTop_toBottomOf="@id/typeMoment" style="@style/MotorH1Type" />
+</androidx.constraintlayout.widget.ConstraintLayout>

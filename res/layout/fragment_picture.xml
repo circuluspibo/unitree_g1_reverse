@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_title_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/bg_dark_round" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="31.0dip" android:layout_marginTop="@dimen/common_margin_middle" android:paddingStart="7.0dip" android:paddingEnd="7.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/common_white" android:id="@id/type_all" android:background="@drawable/tab_pic_type_selector" android:layout_width="wrap_content" android:layout_height="23.0dip" android:text="全部" android:paddingStart="13.5dip" android:paddingEnd="13.5dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/common_white" android:id="@id/type_image" android:background="@drawable/tab_pic_type_selector" android:layout_width="wrap_content" android:layout_height="23.0dip" android:text="图片" android:paddingStart="13.5dip" android:paddingEnd="13.5dip" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/common_white" android:id="@id/type_video" android:background="@drawable/tab_pic_type_selector" android:layout_width="wrap_content" android:layout_height="23.0dip" android:text="视频" android:paddingStart="13.5dip" android:paddingEnd="13.5dip" />
+    </LinearLayout>
+    <TextView android:textSize="20.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/loading" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/srl_footer_loading" />
+    <com.luck.picture.lib.widget.RecyclerPreloadView android:id="@id/recycler" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:overScrollMode="never" />
+</LinearLayout>

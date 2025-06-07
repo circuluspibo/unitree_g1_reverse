@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="55.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/date_selector" android:id="@id/date_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="25.0dip" android:paddingEnd="25.0dip" />
+</LinearLayout>

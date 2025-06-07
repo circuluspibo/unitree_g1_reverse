@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_white_corners_15" android:layout_width="fill_parent" android:layout_height="47.0dip" android:layout_marginBottom="11.0dip" android:paddingStart="25.0dip" android:paddingEnd="20.0dip" android:backgroundTint="#ff4d5379"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_white" android:id="@id/name_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:drawablePadding="@dimen/common_margin_middle" android:layout_weight="1.0" android:drawableStart="@drawable/ic_account_white" />
+    <ImageView android:id="@id/delete_share_iv" android:layout_width="29.0dip" android:layout_height="29.0dip" android:src="@drawable/ic_delete_share" />
+</LinearLayout>

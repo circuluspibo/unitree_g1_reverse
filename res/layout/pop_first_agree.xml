@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_white_corners_item" android:padding="@dimen/common_margin_larger" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_large_size" android:textStyle="bold" android:textColor="@color/common_black" android:gravity="center" android:id="@id/titleTv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pop_protocol_title" />
+    <TextView android:textSize="@dimen/text_small_size" android:textColor="@color/text_light_dark" android:id="@id/contentTv" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="120.0dip" android:layout_marginTop="@dimen/common_margin_middle" android:text="@string/pop_agree_content" android:lineSpacingExtra="3.0dip" android:overScrollMode="ifContentScrolls" />
+    <com.unitree.baselibrary.util.MyTextView android:textSize="@dimen/common_margin_middle" android:textColor="@color/text_light_dark" android:id="@id/protocolTv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_margin_middle" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_margin_middle">
+        <androidx.appcompat.widget.AppCompatButton android:textSize="13.0sp" android:gravity="center" android:id="@id/cancelBtn" android:background="@null" android:paddingTop="@dimen/common_margin_middle" android:paddingBottom="@dimen/common_margin_middle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/pop_protocol_refuse" android:paddingStart="30.0dip" android:paddingEnd="30.0dip" />
+        <Button android:id="@id/agreeBtn" android:text="@string/pop_protocol_agree" android:paddingStart="30.0dip" android:paddingEnd="30.0dip" android:layout_marginStart="@dimen/common_margin_larger" style="@style/FullBtnStyle" />
+    </LinearLayout>
+</LinearLayout>

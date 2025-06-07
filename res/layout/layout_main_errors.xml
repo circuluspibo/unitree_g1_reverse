@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_title_light" android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="16.0sp" android:textColor="@color/common_white" android:gravity="center_vertical" android:background="#ff4a4a5b" android:layout_width="fill_parent" android:layout_height="48.0dip" android:text="@string/title_dog_report" android:paddingStart="35.0dip" android:paddingEnd="35.0dip" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/errors_rv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="15.0dip" android:paddingEnd="11.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</LinearLayout>

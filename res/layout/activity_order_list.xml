@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_title_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.unitree.baselibrary.widget.HeaderBar android:id="@id/order_list_head" app:titleText="@string/app_my_order" style="@style/HeadStyle.Black" />
+    <com.scwang.smart.refresh.layout.SmartRefreshLayout android:id="@id/order_refresh" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="13.0dip">
+        <com.scwang.smart.refresh.header.ClassicsHeader android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <androidx.recyclerview.widget.RecyclerView android:id="@id/order_rv" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/main_title_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.unitree.baselibrary.widget.HeaderBar android:id="@id/m_head" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/HeadStyle.Black" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/wifi_rv" android:background="@drawable/bg_item_dark_8" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_margin="@dimen/common_margin" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/m_head" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/progress_bg" android:background="#49000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/net_progress" android:layout_width="0.0dip" android:layout_height="14.5dip" android:max="5" android:progress="0" android:progressDrawable="@drawable/bluetooth_net_progressbar" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:layout_constraintWidth_percent="0.51" style="?android:progressBarStyleHorizontal" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/ps_please" app:layout_constraintEnd_toEndOf="@id/net_progress" app:layout_constraintStart_toStartOf="@id/net_progress" app:layout_constraintTop_toBottomOf="@id/net_progress" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

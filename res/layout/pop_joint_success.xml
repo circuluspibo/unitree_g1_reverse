@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/root" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/tip_iv" android:layout_width="310.0dip" android:layout_height="150.0dip" android:layout_marginTop="@dimen/common_margin_middle" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/tip_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_margin_middle" android:text="@string/b2_app_change_start_success" android:lineSpacingExtra="18.0dip" />
+</LinearLayout>

@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_normal_size" android:textColor="@color/common_white" android:gravity="center" android:id="@id/sensor_item_tv" android:layout_width="fill_parent" android:layout_height="@dimen/finger_sensor_height" android:lineSpacingExtra="3.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

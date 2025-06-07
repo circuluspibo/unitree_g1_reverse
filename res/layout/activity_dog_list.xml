@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/main_title_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.unitree.baselibrary.widget.HeaderBar android:id="@id/dog_list_head" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:titleText="@string/user_robot_list" style="@style/HeadStyle.Black" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="horizontal" android:id="@id/m_dog_rv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="32.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/dog_list_head" />
+</androidx.constraintlayout.widget.ConstraintLayout>

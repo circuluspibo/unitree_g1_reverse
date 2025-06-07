@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_title_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.unitree.baselibrary.widget.HeaderBar android:layout_marginBottom="13.0dip" app:titleText="@string/app_user_setting_account" style="@style/HeadStyle.Black" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/mobile_rl" android:background="@drawable/item_gradient_light_6" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_marginBottom="@dimen/common_margin_middle" android:layout_marginStart="@dimen/common_margin" android:layout_marginEnd="@dimen/common_margin">
+                <TextView android:textSize="17.0sp" android:textColor="@color/common_white" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/account_phone" android:drawablePadding="11.0dip" android:drawableStart="@drawable/account_mobile" android:drawableEnd="@drawable/ic_arrow_right" android:paddingStart="36.0dip" android:paddingEnd="16.0dip" />
+                <TextView android:textSize="17.0sp" android:textColor="#ff7f86b0" android:gravity="center|right" android:id="@id/phone_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawablePadding="11.0dip" android:paddingEnd="36.0dip" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/email_rl" android:background="@drawable/item_gradient_light_6" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_marginBottom="@dimen/common_margin_middle" android:layout_marginStart="@dimen/common_margin" android:layout_marginEnd="@dimen/common_margin">
+                <TextView android:textSize="17.0sp" android:textColor="@color/common_white" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/account_email" android:drawablePadding="11.0dip" android:drawableStart="@drawable/account_email" android:drawableEnd="@drawable/ic_arrow_right" android:paddingStart="36.0dip" android:paddingEnd="16.0dip" />
+                <TextView android:textSize="17.0sp" android:textColor="#ff7f86b0" android:gravity="center|right" android:id="@id/email_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawablePadding="11.0dip" android:paddingEnd="36.0dip" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/modify_pwd_rl" android:background="@drawable/item_gradient_light_6" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_marginBottom="@dimen/common_margin_middle" android:layout_marginStart="@dimen/common_margin" android:layout_marginEnd="@dimen/common_margin">
+                <TextView android:textSize="17.0sp" android:textColor="@color/common_white" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/app_mine_modify_pwd" android:drawablePadding="11.0dip" android:drawableStart="@drawable/account_modify_pwd" android:drawableEnd="@drawable/ic_arrow_right" android:paddingStart="36.0dip" android:paddingEnd="16.0dip" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/delete_user_rl" android:background="@drawable/item_gradient_light_6" android:layout_width="fill_parent" android:layout_height="58.0dip" android:layout_marginBottom="@dimen/common_margin_middle" android:layout_marginStart="@dimen/common_margin" android:layout_marginEnd="@dimen/common_margin">
+                <TextView android:textSize="17.0sp" android:textColor="@color/common_white" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/app_delete_user" android:drawablePadding="11.0dip" android:drawableStart="@drawable/account_delete" android:drawableEnd="@drawable/ic_arrow_right" android:paddingStart="36.0dip" android:paddingEnd="16.0dip" />
+            </RelativeLayout>
+            <TextView android:textColor="@color/text_red" android:gravity="center" android:id="@id/logout_tv" android:background="@drawable/bg_item_dark_8" android:layout_marginBottom="@dimen/common_margin" android:text="@string/mine_logout" android:drawableRight="@null" android:layout_marginStart="@dimen/common_margin" android:layout_marginEnd="@dimen/common_margin" style="@style/SettingItemText" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@id/error_cl" android:background="@color/main_title_light" style="@style/MatchMatch.Vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.unitree.baselibrary.widget.HeaderBar android:id="@id/head" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:titleText="@string/title_dog_report" style="@style/HeadStyle.Black" />
+    <com.unitree.baselibrary.widget.SwitchButtonView android:textSize="12.0sp" android:textColor="@color/common_white" android:id="@id/warning_switch" android:layout_width="90.0dip" android:layout_height="23.0dip" android:thumb="@drawable/switch_thumb" android:layout_marginEnd="23.0dip" app:layout_constraintBottom_toBottomOf="@id/head" app:layout_constraintEnd_toEndOf="@id/head" app:layout_constraintTop_toTopOf="@id/head" app:switch_off_color="@color/main_item_dark" app:switch_on_color="@color/progress_blue_end" />
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/error_rv" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginStart="13.0dip" android:layout_marginEnd="13.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/head" />
+</androidx.constraintlayout.widget.ConstraintLayout>

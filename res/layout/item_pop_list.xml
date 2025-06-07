@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/tv_text" android:layout_width="wrap_content" android:layout_height="38.0dip" />
+    <View android:id="@id/line" android:background="@drawable/progress_dotted" android:layout_width="fill_parent" android:layout_height="2.0dip" android:backgroundTint="@color/half_white" />
+</LinearLayout>

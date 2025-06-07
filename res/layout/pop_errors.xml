@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:background="@drawable/bg_white_corners_item" android:layout_width="360.0dip" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_marginBottom="35.0dip" android:maxHeight="205.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.utils.widget.ImageFilterView android:background="@drawable/bg_motor_error_pop" android:layout_width="74.0dip" android:layout_height="64.0dip" android:scaleType="fitXY" app:round="@dimen/common_margin_boundary" />
+    <androidx.recyclerview.widget.RecyclerView android:id="@id/error_rv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:maxHeight="115.0dip" android:layout_marginStart="32.0dip" android:layout_marginEnd="32.0dip" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+</FrameLayout>

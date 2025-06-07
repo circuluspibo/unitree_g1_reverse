@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="34" android:compileSdkVersionCodename="14" package="com.unitree.b2dog" platformBuildVersionCode="34" platformBuildVersionName="14">
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:maxSdkVersion="30" android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN" android:usesPermissionFlags="neverForLocation"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADVERTISE"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <queries package="com.unitree.b2dog">
+        <intent>
+            <action android:name="android.media.action.IMAGE_CAPTURE"/>
+        </intent>
+        <intent>
+            <action android:name="android.media.action.ACTION_VIDEO_CAPTURE"/>
+        </intent>
+    </queries>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.STATUS_BAR"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.NEARBY_WIFI_DEVICES" android:usesPermissionFlags="neverForLocation"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="com.vivo.aiengine.permission.READ_AWARE_PROVIDER"/>
+    <uses-permission android:name="com.vivo.aiengine.permission.WRITE_AWARE_PROVIDER"/>
+    <permission android:name="com.unitree.b2dog.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.unitree.b2dog.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <application android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:extractNativeLibs="true" android:icon="@mipmap/logo" android:label="@string/app_name" android:name="com.stub.StubApp" android:networkSecurityConfig="@xml/network_config" android:roundIcon="@mipmap/logo" android:supportsRtl="true" android:theme="@style/AppTheme" android:usesCleartextTraffic="true">
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.standardLeg.G1StandardActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.log.LogReportActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.configSetting.G1MotorOffsetActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.configSetting.H1MotorOffsetActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.configSetting.H1_2MotorOffsetActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.standardAngle.StandardAngleActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.standardAnkle.G1StandardAnkleActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.standardLimb.G1StandardLimbActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.configSetting.JointConfigActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.switchSport.SwitchSportActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.dataBill.DataBillActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.develop.DevelopActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.sharedInfo.SharedInfoActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.dogShare.DogShareActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.account.AccountActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.configSetting.LoadActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.configSetting.OffsetActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.main.NewGuideActivity" android:screenOrientation="landscape" android:theme="@style/ActivityTranslucent"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.guideVideo.GuideVideoActivity" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.luck.picture.lib.basic.PictureSelectorSupporterActivity" android:screenOrientation="landscape" android:theme="@style/Base.Theme.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.luck.picture.lib.basic.PictureSelectorTransparentActivity" android:screenOrientation="landscape" android:theme="@style/Picture.Theme.Translucent"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.yalantis.ucrop.UCropActivity" android:screenOrientation="landscape" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.yalantis.ucrop.UCropMultipleActivity" android:screenOrientation="landscape" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.dogAudio.DogAudioActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.errors.ErrorsActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.function.FunctionActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.guide.ManualActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.gptSpeech.SpeechRecognizeActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.gptSpeech.SpeechRecognizeTestActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.aboutApp.AboutAppActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.serverStatus.ServerStatusActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.orderList.OrderListActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.flowList.FlowListActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.simCard.SimCardActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.update.HardwareUpdateActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.update.HardwareUpdate2Activity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.guide.GuideActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.dogFollow.DogFollowActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.standardLeg.StandardLegActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.checkSelf.CheckSelfActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.standardImu.StandardImuActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.standardImu.G1StandardImuActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.standardImu.H1_2StandardImuActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.radarInfo.RadarInfoActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.fanInfo.FanInfoActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.remoteBind.RemoteBindActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.remoteBind.G1RemoteBindActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.batteryData.BatteryDataActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.batteryData.G1BatteryDataActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.infoSetting.InfoSettingActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.dogBaseData.DogInfoActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.dogBaseData.H1InfoActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.dogBaseData.H1_2InfoActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.dogBaseData.G1DogInfoActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.picture.PictureActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.dogSetting.DogSettingActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.dogData.DogDataActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.dogList.DogListActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.userSetting.UserSettingActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.wifiSTA.WifiSTAActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.feedback.FeedBackActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.godog.ui.activity.modifyPwd.ModifyPasswordActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:launchMode="singleTop" android:name="com.unitree.godog.ui.activity.mine.MineActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:launchMode="singleTask" android:name="com.unitree.godog.ui.activity.web.WebActivity" android:screenOrientation="landscape"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="singleTask" android:name="com.unitree.godog.ui.activity.main.MainActivity" android:screenOrientation="landscape">
+            <intent-filter>
+                <action android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED"/>
+            </intent-filter>
+            <meta-data android:name="android.hardware.usb.action.USB_DEVICE_ATTACHED" android:resource="@xml/device_filter"/>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTop" android:name="com.unitree.godog.ui.activity.launch.LaunchActivity" android:screenOrientation="landscape" android:theme="@style/SplashActivityTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="com.unitree.godog" android:pathPrefix="/open" android:scheme="go2"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="APP_CHANNEL" android:value="inland"/>
+        <meta-data android:name="design_width_in_dp" android:value="812"/>
+        <meta-data android:name="design_height_in_dp" android:value="375"/>
+        <meta-data android:name="android.max_aspect" android:value="ratio_float"/>
+        <activity android:exported="false" android:name="com.unitree.lib_ble.ui.selectMode.SelectModeActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.unitree.lib_ble.ui.connect.ConnectActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.lib_ble.ui.connect.ApConnectActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.lib_ble.ui.connect.ConnectSuccessActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.lib_ble.ui.bindDog.BindDogActivity" android:screenOrientation="landscape"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="com.unitree.lib_ble.ui.netInput.NetInputActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.lib_ble.ui.netConfiguration.NetConfigurationActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.lib_ble.ui.dog.DogBluetoothActivity" android:screenOrientation="landscape"/>
+        <activity android:exported="false" android:name="com.unitree.lib_ble.ui.remote.RemoteActivity" android:screenOrientation="landscape"/>
+        <service android:exported="false" android:name="com.unitree.lib_ble.ui.BluetoothService">
+            <intent-filter android:priority="1000">
+                <action android:name="com.unitree.bleservice"/>
+            </intent-filter>
+        </service>
+        <activity android:exported="false" android:name="com.unitree.login.ui.changeBind.ChangeBindActivity" android:screenOrientation="landscape"/>
+        <activity android:configChanges="orientation|screenSize" android:exported="true" android:launchMode="singleTop" android:name="com.unitree.login.ui.login.LoginActivity" android:screenOrientation="landscape" android:windowSoftInputMode="adjustPan"/>
+        <provider android:authorities="com.unitree.b2dog.claritypotion" android:exported="false" android:multiprocess="true" android:name="com.unitree.rxdownload.utils.ClarityPotion"/>
+        <provider android:authorities="com.unitree.b2dog.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="androidx.core.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:label="" android:name="com.weijiaxing.logviewer.LogcatActivity" android:theme="@style/Theme.AppCompat.NoActionBar"/>
+        <activity android:label="Log detail" android:name="com.weijiaxing.logviewer.LogcatDetailActivity" android:theme="@style/Theme.AppCompat">
+            <meta-data android:name="android.support.PARENT_ACTIVITY" android:value="com.weijiaxing.logviewer.LogcatActivity"/>
+        </activity>
+        <service android:name="com.weijiaxing.logviewer.FloatingLogcatService"/>
+        <meta-data android:name="android.notch_support" android:value="true"/>
+        <activity android:name="com.lxj.xpopup.util.XPermission$PermissionActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <provider android:authorities="com.unitree.b2dog.luckProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.luck.picture.lib.basic.PictureFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/ps_file_paths"/>
+        </provider>
+        <service android:enabled="true" android:foregroundServiceType="location" android:name="com.luck.picture.lib.service.ForegroundService"/>
+        <activity android:exported="false" android:label="" android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity" android:theme="@style/EasyPermissions.Transparent"/>
+        <provider android:authorities="com.unitree.b2dog.androidx-startup" android:exported="false" android:name="androidx.startup.InitializationProvider">
+            <meta-data android:name="androidx.emoji2.text.EmojiCompatInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.lifecycle.ProcessLifecycleInitializer" android:value="androidx.startup"/>
+            <meta-data android:name="androidx.profileinstaller.ProfileInstallerInitializer" android:value="androidx.startup"/>
+        </provider>
+        <receiver android:directBootAware="false" android:enabled="true" android:exported="true" android:name="androidx.profileinstaller.ProfileInstallReceiver" android:permission="android.permission.DUMP">
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SKIP_FILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION"/>
+            </intent-filter>
+        </receiver>
+        <service android:directBootAware="true" android:exported="false" android:name="androidx.room.MultiInstanceInvalidationService"/>
+        <provider android:authorities="com.unitree.b2dog.WsChannelMultiProcessSharedProvider" android:exported="false" android:name="com.bytedance.common.wschannel.WsChannelMultiProcessSharedProvider"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.blankj.utilcode.util.UtilsTransActivity4MainProcess" android:theme="@style/ActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:multiprocess="true" android:name="com.blankj.utilcode.util.UtilsTransActivity" android:theme="@style/ActivityTranslucent" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <provider android:authorities="com.unitree.b2dog.utilcode.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.blankj.utilcode.util.UtilsFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/util_code_provider_paths"/>
+        </provider>
+        <service android:exported="false" android:name="com.blankj.utilcode.util.MessengerUtils$ServerService">
+            <intent-filter>
+                <action android:name="com.unitree.b2dog.messenger"/>
+            </intent-filter>
+        </service>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <provider android:authorities="com.unitree.b2dog.autosize-init-provider" android:exported="false" android:multiprocess="true" android:name="me.jessyan.autosize.InitProvider"/>
+        <provider android:authorities="com.unitree.b2dog.AgentWebFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.just.agentweb.AgentWebFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/web_files_public"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="false" android:launchMode="standard" android:name="com.just.agentweb.AgentActionFragment" android:theme="@style/actionActivity" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <service android:name="com.xuexiang.xupdate.service.DownloadService"/>
+        <provider android:authorities="com.unitree.b2dog.updateFileProvider" android:exported="false" android:grantUriPermissions="true" android:name="com.xuexiang.xupdate.utils.UpdateFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/update_file_paths"/>
+        </provider>
+        <activity android:name="com.xuexiang.xupdate.widget.UpdateDialogActivity" android:theme="@style/XUpdate_DialogTheme"/>
+    </application>
+</manifest>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/mHead" android:paddingTop="@dimen/common_header_bar_margin" android:layout_width="fill_parent" android:layout_height="@dimen/common_header_bar_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/mLeftIv" android:src="@drawable/icon_back_white" android:scaleType="center" android:paddingStart="30.0dip" android:paddingEnd="30.0dip" android:layout_marginStart="@dimen/common_margin" style="@style/WrapMatch" />
+    <TextView android:textSize="@dimen/text_title_size" android:textStyle="bold" android:textColor="@color/text_normal_dark" android:gravity="center" android:id="@id/mTitleTv" android:layout_centerHorizontal="true" style="@style/WrapMatch" />
+    <TextView android:textColor="@color/common_white" android:gravity="center" android:id="@id/mRightTv" android:paddingLeft="@dimen/common_padding" android:paddingRight="@dimen/common_padding" android:visibility="gone" android:layout_alignParentRight="true" style="@style/WrapMatch" />
+    <ImageView android:id="@id/mRightIv" android:padding="@dimen/common_padding" android:visibility="gone" android:src="@drawable/search_history_delete" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_marginEnd="@dimen/common_margin" style="@style/WrapMatch" />
+    <View android:id="@id/mBottomLine" android:visibility="gone" android:layout_alignParentBottom="true" style="@style/DividerFixedHeight" />
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/frame_parent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/cover" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="end" android:id="@id/arrow" android:visibility="visible" android:layout_width="36.0dip" android:layout_height="36.0dip" android:scaleType="center" app:srcCompat="@drawable/arrow_expand_down" />
+</FrameLayout>

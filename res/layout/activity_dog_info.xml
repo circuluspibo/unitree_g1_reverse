@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_title_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.unitree.baselibrary.widget.HeaderBar android:id="@id/dog_info_head" app:titleText="@string/title_dog_setting" style="@style/HeadStyle.Black" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/common_margin" android:paddingEnd="@dimen/common_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/item_gradient_light_6" android:layout_width="fill_parent" android:layout_height="59.0dip" android:layout_marginTop="@dimen/common_margin" android:layout_marginBottom="@dimen/common_margin">
+                <TextView android:textSize="17.0sp" android:textColor="@color/common_white" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/app_title_sn" android:drawablePadding="11.0dip" android:paddingStart="26.0dip" android:paddingEnd="16.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffc3c3f0" android:gravity="center|right" android:layout_gravity="right" android:id="@id/sn_tv" android:layout_width="0.0dip" android:layout_height="fill_parent" android:drawablePadding="11.0dip" android:layout_weight="1.0" android:paddingEnd="5.0dip" />
+                <androidx.appcompat.widget.AppCompatButton android:textSize="13.0sp" android:textColor="@color/common_white" android:id="@id/btn_copy" android:background="@drawable/btn_gradient_27" android:layout_width="60.0dip" android:layout_height="28.0dip" android:text="@string/copy" android:includeFontPadding="false" android:layout_marginEnd="20.0dip" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/email_rl" android:background="@drawable/item_gradient_light_6" android:layout_width="fill_parent" android:layout_height="59.0dip" android:layout_marginBottom="@dimen/common_margin">
+                <TextView android:textSize="17.0sp" android:textColor="@color/common_white" android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/app_title_model" android:drawablePadding="11.0dip" android:paddingStart="26.0dip" android:paddingEnd="16.0dip" />
+                <TextView android:textSize="14.0sp" android:textColor="#ffc3c3f0" android:gravity="center|right" android:id="@id/mode_tv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:drawablePadding="11.0dip" android:paddingEnd="16.0dip" />
+            </RelativeLayout>
+            <TextView android:id="@id/dog_modify" android:visibility="gone" android:text="@string/app_dog_rename" style="@style/expandTv" />
+            <net.cachapa.expandablelayout.ExpandableLayout android:id="@id/modify_expand" android:visibility="gone" style="@style/expandLayout">
+                <include android:id="@id/include_modify" layout="@layout/layout_second_modify" />
+            </net.cachapa.expandablelayout.ExpandableLayout>
+            <TextView android:id="@id/dog_net" android:text="@string/app_dog_change_contract" style="@style/expandTv" />
+            <net.cachapa.expandablelayout.ExpandableLayout android:id="@id/net_expand" style="@style/expandLayout">
+                <include android:id="@id/include_net" layout="@layout/layout_second_net" />
+            </net.cachapa.expandablelayout.ExpandableLayout>
+            <TextView android:textSize="19.0sp" android:textColor="@color/btn_red" android:gravity="center" android:id="@id/expandable_unbind" android:background="@drawable/item_gradient_white" android:layout_width="fill_parent" android:layout_height="57.0dip" android:layout_marginTop="11.0dip" android:layout_marginBottom="20.0dip" android:text="@string/btn_unbind" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

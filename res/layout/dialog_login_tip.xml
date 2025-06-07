@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_upgrade_app" android:layout_width="360.0dip" android:layout_height="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="19.0sp" android:textColor="#ff000000" android:id="@id/tv_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:text="@string/user_login_title" android:layout_marginStart="24.0dip" />
+    <androidx.core.widget.NestedScrollView android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_marginTop="8.0dip" android:layout_weight="1.0" android:layout_marginStart="24.0dip" android:layout_marginEnd="24.0dip">
+        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/tv_content" android:layout_width="wrap_content" android:layout_height="fill_parent" />
+    </androidx.core.widget.NestedScrollView>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/common_margin">
+        <TextView android:textSize="17.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/bg_btn_round_gray" android:layout_width="0.0dip" android:layout_height="45.0dip" android:text="@string/btn_cancel" android:layout_weight="1.0" android:layout_marginEnd="7.5dip" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/tv_confirm" android:background="@drawable/bg_btn_round_blue" android:layout_width="0.0dip" android:layout_height="45.0dip" android:text="@string/btn_confirm" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@drawable/item_expand_dark" android:padding="@dimen/common_margin" style="@style/MatchWrap"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/bg_robot" android:layout_width="403.0dip" android:layout_height="448.0dip" android:src="@drawable/motor_h1_2" android:layout_marginStart="110.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line0" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintGuide_begin="50.0dip" />
+    <TextView android:id="@id/motor20" app:layout_constraintBottom_toTopOf="@id/line0" app:layout_constraintStart_toStartOf="@id/bg_robot" style="@style/MotorH1_2Text.start" />
+    <TextView android:id="@id/motor13" app:layout_constraintBottom_toTopOf="@id/line0" app:layout_constraintEnd_toEndOf="@id/bg_robot" style="@style/MotorH1_2Text.end" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line1" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintGuide_begin="74.0dip" />
+    <TextView android:id="@id/motor21" app:layout_constraintBottom_toTopOf="@id/line1" app:layout_constraintStart_toStartOf="@id/bg_robot" style="@style/MotorH1_2Text.start" />
+    <TextView android:id="@id/motor14" app:layout_constraintBottom_toTopOf="@id/line1" app:layout_constraintEnd_toEndOf="@id/bg_robot" style="@style/MotorH1_2Text.end" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line2" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintGuide_begin="103.0dip" />
+    <TextView android:id="@id/motor22" app:layout_constraintBottom_toTopOf="@id/line2" app:layout_constraintStart_toStartOf="@id/bg_robot" style="@style/MotorH1_2Text.start" />
+    <TextView android:id="@id/motor15" app:layout_constraintBottom_toTopOf="@id/line2" app:layout_constraintEnd_toEndOf="@id/bg_robot" style="@style/MotorH1_2Text.end" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line3" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintGuide_begin="133.0dip" />
+    <TextView android:id="@id/motor23" app:layout_constraintBottom_toTopOf="@id/line3" app:layout_constraintStart_toStartOf="@id/bg_robot" style="@style/MotorH1_2Text.start" />
+    <TextView android:id="@id/motor16" app:layout_constraintBottom_toTopOf="@id/line3" app:layout_constraintEnd_toEndOf="@id/bg_robot" style="@style/MotorH1_2Text.end" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line4" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintGuide_begin="162.0dip" />
+    <TextView android:id="@id/motor24" app:layout_constraintBottom_toTopOf="@id/line4" app:layout_constraintStart_toStartOf="@id/bg_robot" style="@style/MotorH1_2Text.start" />
+    <TextView android:id="@id/motor17" app:layout_constraintBottom_toTopOf="@id/line4" app:layout_constraintEnd_toEndOf="@id/bg_robot" style="@style/MotorH1_2Text.end" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line5" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintGuide_begin="187.0dip" />
+    <TextView android:id="@id/motor25" app:layout_constraintBottom_toTopOf="@id/line5" app:layout_constraintStart_toStartOf="@id/bg_robot" style="@style/MotorH1_2Text.start" />
+    <TextView android:id="@id/motor18" app:layout_constraintBottom_toTopOf="@id/line5" app:layout_constraintEnd_toEndOf="@id/bg_robot" style="@style/MotorH1_2Text.end" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line6" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintGuide_begin="214.0dip" />
+    <TextView android:id="@id/motor26" app:layout_constraintBottom_toTopOf="@id/line6" app:layout_constraintStart_toStartOf="@id/bg_robot" style="@style/MotorH1_2Text.start" />
+    <TextView android:id="@id/motor19" app:layout_constraintBottom_toTopOf="@id/line6" app:layout_constraintEnd_toEndOf="@id/bg_robot" style="@style/MotorH1_2Text.end" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line7" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintGuide_begin="253.0dip" />
+    <TextView android:id="@id/motor8" app:layout_constraintBottom_toTopOf="@id/line7" app:layout_constraintStart_toStartOf="@id/bg_robot" style="@style/MotorH1_2Text.start" />
+    <TextView android:id="@id/motor2" app:layout_constraintBottom_toTopOf="@id/line7" app:layout_constraintEnd_toEndOf="@id/bg_robot" style="@style/MotorH1_2Text.end" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line8" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintGuide_begin="283.0dip" />
+    <TextView android:id="@id/motor9" app:layout_constraintBottom_toTopOf="@id/line8" app:layout_constraintStart_toStartOf="@id/bg_robot" style="@style/MotorH1_2Text.start" />
+    <TextView android:id="@id/motor3" app:layout_constraintBottom_toTopOf="@id/line8" app:layout_constraintEnd_toEndOf="@id/bg_robot" style="@style/MotorH1_2Text.end" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line9" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintGuide_begin="311.0dip" />
+    <TextView android:id="@id/motor6" app:layout_constraintBottom_toTopOf="@id/line9" app:layout_constraintStart_toStartOf="@id/bg_robot" style="@style/MotorH1_2Text.start" />
+    <TextView android:id="@id/motor0" app:layout_constraintBottom_toTopOf="@id/line9" app:layout_constraintEnd_toEndOf="@id/bg_robot" style="@style/MotorH1_2Text.end" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line10" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintGuide_begin="336.0dip" />
+    <TextView android:id="@id/motor7" app:layout_constraintBottom_toTopOf="@id/line10" app:layout_constraintStart_toStartOf="@id/bg_robot" style="@style/MotorH1_2Text.start" />
+    <TextView android:id="@id/motor1" app:layout_constraintBottom_toTopOf="@id/line10" app:layout_constraintEnd_toEndOf="@id/bg_robot" style="@style/MotorH1_2Text.end" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line11" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintGuide_begin="363.0dip" />
+    <TextView android:id="@id/motor10" app:layout_constraintBottom_toTopOf="@id/line11" app:layout_constraintStart_toStartOf="@id/bg_robot" style="@style/MotorH1_2Text.start" />
+    <TextView android:id="@id/motor4" app:layout_constraintBottom_toTopOf="@id/line11" app:layout_constraintEnd_toEndOf="@id/bg_robot" style="@style/MotorH1_2Text.end" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line12" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintGuide_begin="394.0dip" />
+    <TextView android:id="@id/motor11" app:layout_constraintBottom_toTopOf="@id/line12" app:layout_constraintStart_toStartOf="@id/bg_robot" style="@style/MotorH1_2Text.start" />
+    <TextView android:id="@id/motor5" app:layout_constraintBottom_toTopOf="@id/line12" app:layout_constraintEnd_toEndOf="@id/bg_robot" style="@style/MotorH1_2Text.end" />
+    <androidx.constraintlayout.widget.Guideline android:orientation="horizontal" android:id="@id/line13" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_constraintGuide_begin="421.0dip" />
+    <TextView android:id="@id/motor12" app:layout_constraintBottom_toTopOf="@id/line13" app:layout_constraintEnd_toEndOf="@id/bg_robot" style="@style/MotorH1_2Text.end" />
+    <TextView android:id="@id/typeSign" android:layout_marginTop="25.0dip" android:text="@string/app_type_sign" android:layout_marginEnd="35.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/MotorH1Type" />
+    <TextView android:id="@id/typeLost" android:text="@string/app_type_lost" app:layout_constraintEnd_toEndOf="@id/typeSign" app:layout_constraintTop_toBottomOf="@id/typeSign" style="@style/MotorH1Type" />
+    <TextView android:id="@id/typeLocation" android:text="@string/app_type_location" app:layout_constraintEnd_toEndOf="@id/typeSign" app:layout_constraintTop_toBottomOf="@id/typeLost" style="@style/MotorH1Type" />
+    <TextView android:id="@id/typeTemperature" android:text="@string/app_type_temperature" app:layout_constraintEnd_toEndOf="@id/typeSign" app:layout_constraintTop_toBottomOf="@id/typeLocation" style="@style/MotorH1Type" />
+    <TextView android:id="@id/typeTemperatureWinding" android:text="@string/app_type_temperature_winding" app:layout_constraintEnd_toEndOf="@id/typeSign" app:layout_constraintTop_toBottomOf="@id/typeTemperature" style="@style/MotorH1Type" />
+    <TextView android:id="@id/typeReserve" android:text="@string/app_type_reserve" app:layout_constraintEnd_toEndOf="@id/typeSign" app:layout_constraintTop_toBottomOf="@id/typeTemperatureWinding" style="@style/MotorH1Type" />
+</androidx.constraintlayout.widget.ConstraintLayout>

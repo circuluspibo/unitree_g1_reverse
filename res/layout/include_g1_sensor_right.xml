@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout style="@style/MatchMatch"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="14.0sp" android:textColor="@color/info_text_blue" android:gravity="center" android:background="@drawable/btn_blue_stroke" android:layout_width="wrap_content" android:layout_height="29.0dip" android:layout_marginTop="20.0dip" android:text="@string/hand_right" android:paddingStart="12.0dip" android:paddingEnd="12.0dip" android:layout_marginStart="30.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <ImageView android:id="@id/bg_left" android:layout_width="440.0dip" android:layout_height="268.0dip" android:layout_marginTop="81.0dip" android:src="@drawable/hand_sensor_right" android:layout_marginStart="140.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:id="@id/sensor5" android:layout_marginTop="82.0dip" app:layout_constraintStart_toStartOf="@id/bg_left" app:layout_constraintTop_toTopOf="@id/bg_left" style="@style/SensorText" />
+    <TextView android:id="@id/sensor0" android:layout_marginTop="-26.0dip" android:layout_marginEnd="4.0dip" app:layout_constraintEnd_toEndOf="@id/bg_left" app:layout_constraintTop_toTopOf="@id/bg_left" style="@style/SensorText" />
+    <TextView android:id="@id/sensor3" android:layout_marginTop="-20.0dip" android:layout_marginStart="140.0dip" app:layout_constraintStart_toStartOf="@id/bg_left" app:layout_constraintTop_toBottomOf="@id/bg_left" style="@style/SensorText" />
+    <TextView android:id="@id/sensor2" android:layout_marginTop="-48.0dip" android:layout_marginEnd="120.0dip" app:layout_constraintEnd_toEndOf="@id/bg_left" app:layout_constraintTop_toBottomOf="@id/bg_left" style="@style/SensorText" />
+    <TextView android:id="@id/sensor6" android:layout_marginEnd="180.0dip" app:layout_constraintBottom_toTopOf="@id/bg_left" app:layout_constraintEnd_toEndOf="@id/bg_left" style="@style/SensorText" />
+    <TextView android:id="@id/sensor8" android:layout_marginTop="133.0dip" android:layout_marginEnd="-16.0dip" app:layout_constraintEnd_toEndOf="@id/bg_left" app:layout_constraintTop_toTopOf="@id/bg_left" style="@style/SensorText" />
+    <TextView android:id="@id/sensor1" android:layout_marginStart="86.0dip" app:layout_constraintStart_toStartOf="@id/bg_left" app:layout_constraintTop_toTopOf="@id/bg_left" style="@style/SensorText" />
+    <TextView android:id="@id/sensor7" android:layout_marginTop="36.0dip" app:layout_constraintStart_toEndOf="@id/bg_left" app:layout_constraintTop_toTopOf="@id/bg_left" style="@style/SensorText" />
+    <TextView android:id="@id/sensor4" android:layout_marginTop="58.0dip" android:layout_marginStart="53.0dip" app:layout_constraintStart_toStartOf="@id/bg_left" app:layout_constraintTop_toTopOf="@id/bg_left" style="@style/SensorText" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_title_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.unitree.baselibrary.widget.HeaderBar android:id="@id/data_info_head" app:titleText="@string/app_robot_dog" style="@style/HeadStyle.Black" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/common_margin" android:paddingEnd="@dimen/common_margin">
+        <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/common_margin_larger" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.skydoves.expandablelayout.ExpandableLayout android:id="@id/expandable_version" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" app:expandable_duration="200" app:expandable_isExpanded="true" app:expandable_parentLayout="@layout/layout_parent" app:expandable_secondLayout="@layout/layout_second_version" app:expandable_spinner_animate="false" app:expandable_spinner_size="26.0dip" />
+            <com.skydoves.expandablelayout.ExpandableLayout android:id="@id/expandable_leg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" app:expandable_duration="200" app:expandable_isExpanded="true" app:expandable_parentLayout="@layout/layout_parent" app:expandable_secondLayout="@layout/layout_second_leg_g1" app:expandable_spinner_animate="false" app:expandable_spinner_size="26.0dip" />
+            <com.skydoves.expandablelayout.ExpandableLayout android:id="@id/expandable_standard" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" app:expandable_duration="200" app:expandable_isExpanded="true" app:expandable_parentLayout="@layout/layout_parent" app:expandable_secondLayout="@layout/layout_second_standard_g1" app:expandable_spinner_animate="false" app:expandable_spinner_size="26.0dip" />
+            <TextView android:textSize="@dimen/text_normal_size" android:textColor="@color/common_white" android:gravity="center_vertical" android:id="@id/title_angle" android:background="@drawable/item_expand_dark" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="65.0dip" android:text="@string/app_title_angle_standard" android:drawableEnd="@drawable/ic_arrow_right" android:paddingStart="31.0dip" android:paddingEnd="22.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toBottomOf="@id/spline_line" />
+            <LinearLayout android:id="@id/waist_lock_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+                <com.skydoves.expandablelayout.ExpandableLayout android:id="@id/expandable_lock" android:layout_width="fill_parent" android:layout_height="wrap_content" app:expandable_duration="200" app:expandable_isExpanded="true" app:expandable_parentLayout="@layout/layout_parent" app:expandable_secondLayout="@layout/layout_second_low_power" app:expandable_spinner_animate="false" app:expandable_spinner_size="26.0dip" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/machine_type_ll" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+                <com.skydoves.expandablelayout.ExpandableLayout android:id="@id/expandable_machine_type" android:layout_width="fill_parent" android:layout_height="wrap_content" app:expandable_duration="200" app:expandable_parentLayout="@layout/layout_parent" app:expandable_secondLayout="@layout/layout_second_machine_type" app:expandable_spinner_animate="false" app:expandable_spinner_size="26.0dip" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/config_ll" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.skydoves.expandablelayout.ExpandableLayout android:id="@id/expandable_config" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" app:expandable_duration="200" app:expandable_isExpanded="true" app:expandable_parentLayout="@layout/layout_parent" app:expandable_secondLayout="@layout/layout_second_config_g1" app:expandable_spinner_animate="false" app:expandable_spinner_size="26.0dip" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/hand_ll" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="11.0dip">
+                <com.skydoves.expandablelayout.ExpandableLayout android:id="@id/expandable_hand_type" android:layout_width="fill_parent" android:layout_height="wrap_content" app:expandable_duration="200" app:expandable_isExpanded="true" app:expandable_parentLayout="@layout/layout_parent" app:expandable_secondLayout="@layout/layout_second_hand_g1" app:expandable_spinner_animate="false" app:expandable_spinner_size="26.0dip" />
+            </LinearLayout>
+            <TextView android:id="@id/hand_type_tv" android:visibility="gone" android:text="@string/app_title_hand_type" style="@style/expandTv" />
+            <net.cachapa.expandablelayout.ExpandableLayout android:id="@id/hand_type_expand" android:visibility="gone" style="@style/expandLayout">
+                <include android:id="@id/include_hand_type" layout="@layout/layout_second_machine_type" />
+            </net.cachapa.expandablelayout.ExpandableLayout>
+            <TextView android:id="@id/hand_motor_tv" android:visibility="gone" android:text="@string/hand_title_motor_info" style="@style/expandTv" />
+            <net.cachapa.expandablelayout.ExpandableLayout android:id="@id/hand_motor_expand" android:visibility="gone" style="@style/expandLayout">
+                <include android:id="@id/include_hand_motor" layout="@layout/layout_second_hand_g1" />
+            </net.cachapa.expandablelayout.ExpandableLayout>
+            <TextView android:id="@id/hand_sensor_tv" android:visibility="gone" android:text="@string/app_title_hand_sensor" style="@style/expandTv" />
+            <net.cachapa.expandablelayout.ExpandableLayout android:id="@id/hand_sensor_expand" android:visibility="gone" style="@style/expandLayout">
+                <include android:id="@id/include_hand_sensor" layout="@layout/layout_second_g1_sensor" />
+            </net.cachapa.expandablelayout.ExpandableLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

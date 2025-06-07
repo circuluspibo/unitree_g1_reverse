@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/main_title_light" style="@style/MatchMatch.Vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.unitree.baselibrary.widget.HeaderBar style="@style/HeadStyle.Tran" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="85.0dip" android:paddingEnd="85.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/manual_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/app_guide_manual" android:drawableTop="@drawable/guide_manual" android:drawablePadding="19.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/tutorials_video_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/app_guide_tutorials_video" android:drawableTop="@drawable/guide_tutorials_video" android:drawablePadding="19.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/maintenance_tv" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/app_guide_maintenance" android:drawableTop="@drawable/guide_maintenance" android:drawablePadding="19.0dip" android:layout_weight="1.0" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/common_problem_tv" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/app_guide_common_problem" android:drawableTop="@drawable/guide_common_problem" android:drawablePadding="19.0dip" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

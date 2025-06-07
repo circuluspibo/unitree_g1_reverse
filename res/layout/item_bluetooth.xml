@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/item_bg_bluetooth" android:layout_width="fill_parent" android:layout_height="46.5dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="18.0dip" android:layout_height="24.0dip" android:src="@drawable/remote_ic_bluetooth" android:layout_marginStart="33.0dip" />
+    <TextView android:textSize="@dimen/text_size_13" android:textColor="@color/common_white" android:gravity="right" android:id="@id/bluetooth_name_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Unitree" android:layout_marginEnd="@dimen/common_margin" />
+</LinearLayout>

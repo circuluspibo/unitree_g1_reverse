@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout style="@style/MatchMatch.Vertical"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/parent" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/back_iv" android:layout_width="20.0dip" android:layout_height="28.0dip" android:src="@drawable/rtc_back" android:scaleType="fitCenter" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <androidx.constraintlayout.widget.ConstraintLayout android:id="@id/loading_Cl" android:background="#ff090b10" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/loading" android:background="@drawable/bg_web" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/web_loading_g1" android:scaleType="centerInside" app:layout_constraintBottom_toTopOf="@id/loading_number" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/common_white" android:id="@id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Unitree" android:layout_marginStart="20.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+        <TextView android:textSize="18.0sp" android:textColor="#ffa2b0ff" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" app:layout_constraintBaseline_toBaselineOf="@id/text" app:layout_constraintStart_toEndOf="@id/text" />
+        <TextView android:textSize="29.0sp" android:textColor="#ffbec7ff" android:id="@id/loading_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="0" android:includeFontPadding="false" android:layout_marginEnd="40.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" />
+        <TextView android:textSize="13.0sp" android:textColor="#ffbec7ff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="%" android:layout_marginEnd="27.0dip" app:layout_constraintBaseline_toBaselineOf="@id/loading_number" app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

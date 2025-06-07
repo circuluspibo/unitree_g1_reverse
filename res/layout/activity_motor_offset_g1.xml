@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:orientation="vertical" style="@style/MatchMatch.Vertical.Common"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.unitree.baselibrary.widget.HeaderBar android:id="@id/offset_head" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:titleText="@string/app_title_config_offset" style="@style/HeadStyle.Black" />
+    <androidx.core.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintTop_toBottomOf="@id/offset_head">
+        <LinearLayout android:gravity="center" android:id="@id/scroll" android:paddingBottom="60.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="70.0dip" android:layout_marginStart="-30.0dip">
+            <include android:id="@id/include_23" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/angle_g1_23" />
+            <include android:id="@id/include_29" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/angle_g1_29" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <TextView android:id="@id/reset_btn" android:layout_marginTop="40.0dip" android:text="@string/app_btn_reset" android:layout_marginEnd="35.0dip" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintTop_toBottomOf="@id/offset_head" style="@style/MotorH1Type" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.constraintlayout.utils.widget.ImageFilterView android:id="@id/pic_iv" android:layout_width="fill_parent" android:layout_height="0.0dip" app:layout_constraintDimensionRatio="1:1" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" app:round="6.0dip" />
+    <ImageView android:id="@id/video_ic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="7.5dip" android:src="@drawable/ic_pic_video" android:layout_marginStart="8.0dip" app:layout_constraintBottom_toBottomOf="@id/pic_iv" app:layout_constraintStart_toStartOf="@id/pic_iv" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/common_white" android:id="@id/video_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginEnd="10.0dip" app:layout_constraintBottom_toBottomOf="@id/video_ic" app:layout_constraintEnd_toEndOf="@id/pic_iv" app:layout_constraintTop_toTopOf="@id/video_ic" />
+</androidx.constraintlayout.widget.ConstraintLayout>

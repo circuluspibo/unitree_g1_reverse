@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/common_margin_middle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/text_bg" android:background="@drawable/dog_bg_item" android:layout_width="fill_parent" android:layout_height="64.0dip" android:layout_alignBottom="@id/dog_icon" />
+    <TextView android:textSize="17.0sp" android:textColor="@color/common_black" android:gravity="center_vertical" android:id="@id/bluetooth_name_tv" android:layout_width="wrap_content" android:layout_height="64.0dip" android:layout_alignBottom="@id/dog_icon" android:paddingEnd="@dimen/common_margin" android:layout_marginStart="95.0dip" />
+    <TextView android:textSize="9.0sp" android:textColor="#ff080808" android:gravity="center" android:id="@id/bind_state" android:background="@drawable/bg_dog_bind" android:layout_width="wrap_content" android:layout_height="18.5dip" android:text="@string/ble_binded" android:layout_centerVertical="true" android:alpha="0.6" android:paddingStart="13.0dip" android:paddingEnd="13.0dip" android:layout_toEndOf="@id/bluetooth_name_tv" />
+    <ImageView android:id="@id/dog_icon" android:layout_width="65.0dip" android:layout_height="60.0dip" android:layout_marginTop="4.0dip" android:src="@drawable/g1_ic_item" android:layout_marginStart="@dimen/common_margin" />
+</RelativeLayout>

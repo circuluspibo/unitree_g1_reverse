@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/action_icon" android:background="@drawable/bg_action_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tint="@color/tint_action_selector" />
+    <TextView android:textSize="14.0sp" android:textColor="@color/common_white" android:id="@id/action_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/common_margin_middle" />
+</LinearLayout>

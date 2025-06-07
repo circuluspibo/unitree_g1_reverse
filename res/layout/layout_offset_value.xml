@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.5sp" android:textColor="@color/info_text_blue" android:id="@id/title_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="V" />
+    <TextView android:textSize="10.0sp" android:textColor="@color/info_text_blue" android:id="@id/title_2" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="x" />
+    <ImageView android:id="@id/offset_reduce" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/offset_reduce" android:scaleType="center" android:layout_marginStart="5.0dip" android:layout_marginEnd="2.0dip" />
+    <TextView android:textSize="12.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/offset_value" android:background="@drawable/offset_value_bg" android:layout_width="51.0dip" android:layout_height="22.5dip" />
+    <ImageView android:id="@id/offset_add" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/offset_add" android:scaleType="center" android:layout_marginStart="2.0dip" android:layout_marginEnd="5.0dip" />
+</LinearLayout>

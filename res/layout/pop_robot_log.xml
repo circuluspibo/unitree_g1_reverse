@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/bg_white_corners_15" android:padding="@dimen/common_margin" android:layout_width="654.0dip" android:layout_height="300.0dip" android:backgroundTint="#ff252536"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.recyclerview.widget.RecyclerView android:orientation="vertical" android:id="@id/logRv" android:background="@drawable/bg_item_dark_8" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:backgroundTint="#ff171722" app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/common_margin">
+        <TextView android:textSize="17.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/btn_gray_27" android:layout_width="160.0dip" android:layout_height="40.0dip" android:text="@string/btn_cancel" android:layout_marginEnd="7.5dip" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/tv_confirm" android:background="@drawable/btn_gradient_27" android:layout_width="160.0dip" android:layout_height="40.0dip" android:text="@string/btn_confirm" />
+    </LinearLayout>
+</LinearLayout>

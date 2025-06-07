@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:background="@color/main_title_light" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.unitree.baselibrary.widget.HeaderBar app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" style="@style/HeadStyle.Black" />
+    <TextView android:textSize="30.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/sendTv" android:background="@drawable/btn_gradient_27" android:padding="@dimen/common_margin_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80.0dip" android:text="发送消息（unitree）" android:layout_marginStart="50.0dip" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent" />
+    <TextView android:textSize="25.0sp" android:textColor="@color/text_7f" android:gravity="center" android:id="@id/stateTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" app:layout_constraintStart_toStartOf="@id/sendTv" app:layout_constraintTop_toBottomOf="@id/sendTv" />
+    <TextView android:textSize="28.0sp" android:textColor="@color/common_white" android:gravity="center" android:id="@id/receiveTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" app:layout_constraintStart_toStartOf="@id/sendTv" app:layout_constraintTop_toBottomOf="@id/stateTv" />
+</androidx.constraintlayout.widget.ConstraintLayout>
